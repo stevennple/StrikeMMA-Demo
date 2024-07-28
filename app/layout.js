@@ -6,6 +6,7 @@ import { Anton } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import ChatButton from "./ components/ChatButton";
 import Head from "next/head";
+import GoogleAnalytics from "./ components/GoogleAnalytics";
 // import Nav from "./ components/Nav";
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
