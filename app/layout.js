@@ -5,7 +5,6 @@ import { Bungee_Outline } from "next/font/google";
 import { Anton } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import ChatButton from "./ components/ChatButton";
-// import GoogleAnalytics from "./ components/GoogleAnalytics";
 import Head from "next/head";
 // import Nav from "./ components/Nav";
 const inter = Inter({ subsets: ["latin"] });
@@ -49,7 +48,6 @@ export default function RootLayout({ children }) {
         }} />
       </Head>
       <head>
-       {/* <GoogleAnalytics /> */}
         <link
           rel="stylesheet"
           href="https://embed.pickaxeproject.com/axe/scripts/fab/styles.css"
