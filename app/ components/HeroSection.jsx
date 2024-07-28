@@ -21,7 +21,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <div className="min-h-full flex flex-col items-center relative max-w-7xl px-20 sm:px-[20px] mx-auto">
+    <div className="min-h-full flex flex-col items-center relative max-w-7xl lg:px-20 px-[20px] mx-auto">
       {/* Gradient for the top section */}
       <Nav />
       <div className="absolute top-0 left-0 w-full h-[70%] lg:h-[90%] pointer-events-none z-0">
