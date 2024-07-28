@@ -5,7 +5,7 @@ import { Bungee_Outline } from "next/font/google";
 import { Anton } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import ChatButton from "./ components/ChatButton";
-import GoogleAnalytics from "./ components/GoogleAnalytics";
+// import GoogleAnalytics from "./ components/GoogleAnalytics";
 import Head from "next/head";
 // import Nav from "./ components/Nav";
 const inter = Inter({ subsets: ["latin"] });
@@ -33,11 +33,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-      <Script
+      <script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <Script
+      <script
         id="google-analytics"
         dangerouslySetInnerHTML={{
           __html: `
