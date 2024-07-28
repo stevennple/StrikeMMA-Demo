@@ -6,6 +6,7 @@ import { Anton } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import ChatButton from "./ components/ChatButton";
 import Head from "next/head";
+import Script from "next/script";
 // import GoogleAnalytics from "./ components/GoogleAnalytics";
 // import Nav from "./ components/Nav";
 const inter = Inter({ subsets: ["latin"] });
@@ -33,11 +34,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
        <Head>
-        <script
+        <Script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
         />
-        <script
+        <Script
           id="google-analytics"
           dangerouslySetInnerHTML={{
             __html: `
@@ -57,7 +58,7 @@ export default function RootLayout({ children }) {
         />
         <script
           src="https://embed.pickaxeproject.com/axe/scripts/fab/bundle.js"
-          async></script>
+          async></cript>
       </head>
       <body
         className={`${poppins.variable} ${bungee.variable} ${anton.variable}${inter.variable}  overflow-x-hidden`}>
