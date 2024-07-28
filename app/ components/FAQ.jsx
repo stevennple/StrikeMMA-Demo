@@ -71,6 +71,7 @@ export default function FAQ() {
                     <span>
                       <Image
                         src={Plus}
+                        color="white"
                         alt="See more"
                         className="h-10 w-10 lg:w-6 lg:h-6"
                       />

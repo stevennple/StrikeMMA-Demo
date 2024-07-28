@@ -6,7 +6,7 @@ import Link from "next/link";
 import Nav from "../ components/Nav";
 
 const gradient = "/Gradient.svg";
-const mockupMain = "/mockupMain.svg";
+const mockupMain = "/mockupmain.svg";
 const buttons = [
   { text: "Download Now", icon: "/android.svg", href: "/" },
   { text: "Download Now", icon: "/store.svg", href: "/" },
