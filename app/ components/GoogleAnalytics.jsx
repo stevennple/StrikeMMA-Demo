@@ -1,15 +1,16 @@
 // components/GoogleAnalytics.js
 import React from 'react';
 import Head from 'next/head';
+import Script from 'next/script';
 
 const GoogleAnalytics = () => {
   return (
-    <Head>
-      <script
+    <>
+      <Script
         async
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
       />
-      <script
+      <Script
         id="google-analytics"
         dangerouslySetInnerHTML={{
           __html: `
@@ -20,7 +21,7 @@ const GoogleAnalytics = () => {
           `,
         }}
       />
-    </Head>
+    </>
   );
 };
 

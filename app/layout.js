@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
         />
         <script
           src="https://embed.pickaxeproject.com/axe/scripts/fab/bundle.js"
-          async></cript>
+          async></script>
       </head>
       <body
         className={`${poppins.variable} ${bungee.variable} ${anton.variable}${inter.variable}  overflow-x-hidden`}>
