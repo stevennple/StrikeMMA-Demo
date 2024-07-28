@@ -5,6 +5,7 @@ import { Bungee_Outline } from "next/font/google";
 import { Anton } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import ChatButton from "./ components/ChatButton";
+import GoogleAnalytics from "./ components/GoogleAnalytics";
 // import Nav from "./ components/Nav";
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -31,15 +32,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script
-          async
-          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}></script>
-        <script>
-          window.dataLayer = window.dataLayer || []; function gtag(){" "}
-          {dataLayer.push(arguments)}
-          gtag('js', new Date()); gtag('config', '$
-          {process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
-        </script>
+       <GoogleAnalytics />
         <link
           rel="stylesheet"
           href="https://embed.pickaxeproject.com/axe/scripts/fab/styles.css"
