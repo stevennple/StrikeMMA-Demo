@@ -6,6 +6,8 @@ import { Anton } from "next/font/google";
 import { Plus_Jakarta_Sans } from "next/font/google";
 import ChatButton from "./ components/ChatButton";
 import Head from "next/head";
+import Script from "next/script";
+// import GoogleAnalytics from "./ components/GoogleAnalytics";
 // import Nav from "./ components/Nav";
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({
@@ -31,24 +33,25 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Head>
-      <script
-        async
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <script
-        id="google-analytics"
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
-          `,
-        }} />
+       <Head>
+        <Script
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        />
+        <Script
+          id="google-analytics"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+            `,
+          }}
+        />
       </Head>
       <head>
-      <GoogleAnalytics />
+      {/* <GoogleAnalytics /> */}
         <link
           rel="stylesheet"
           href="https://embed.pickaxeproject.com/axe/scripts/fab/styles.css"
