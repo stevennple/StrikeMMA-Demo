@@ -8,7 +8,6 @@ import ChatButton from "./ components/ChatButton";
 import Head from "next/head";
 import Script from "next/script";
 import GoogleAnalytics from "./ components/GoogleAnalytics";
-// import GoogleAnalytics from "./ components/GoogleAnalytics";
 // import Nav from "./ components/Nav";
 const inter = Inter({ subsets: ["latin"] });
 const poppins = Poppins({

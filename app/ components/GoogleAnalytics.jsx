@@ -5,6 +5,7 @@ import Script from 'next/script';
 
 const GoogleAnalytics = () => {
   return (
+    
     <>
       <Script
         async
