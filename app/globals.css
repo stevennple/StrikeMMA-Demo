@@ -40,7 +40,13 @@
   background-color: #1500f6; /* Change the color */
   border-radius: 9999px; /* Make it round */
 }
+body {
+  @apply bg-gray-100;
+}
 
+.iframe-container {
+  @apply w-full h-full;
+}
 
 .gradient-navbar-bg {
   background: radial-gradient(169.58% 430.16% at -3.62% -38.58%, #6083FF 0%, #0B107E 26.11%, #0B107E 84.97%, rgba(0, 240, 255, 0.65) 100%);

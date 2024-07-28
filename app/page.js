@@ -6,6 +6,7 @@ import Image from "next/image";
 import FAQ from "./ components/FAQ";
 import Footer from "./ components/Footer";
 import Pricing from "./ components/Pricing";
+import EmbeddedIframe from "./ components/Embed";
 
 const Loading = () => {
   return (
@@ -49,8 +50,11 @@ const Home = () => {
   // Render the main content once isLoading becomes false
   return (
     <>
+
+
       <div className={`bg-[#020202] min-w-screen overflow-x-hidden`}>
         <HeroSection />
+        {/* <EmbeddedIframe/> */}
         <FAQ />
         <Pricing />
         <Footer />
