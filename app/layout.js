@@ -48,6 +48,7 @@ export default function RootLayout({ children }) {
         }} />
       </Head>
       <head>
+      <GoogleAnalytics />
         <link
           rel="stylesheet"
           href="https://embed.pickaxeproject.com/axe/scripts/fab/styles.css"
