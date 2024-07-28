@@ -58,7 +58,6 @@ export default function RootLayout({ children }) {
       </head>
       <body
         className={`${poppins.variable} ${bungee.variable} ${anton.variable}${inter.variable}  overflow-x-hidden`}>
-        {/* <Nav /> */}
         {children}
         <ChatButton />
       </body>
