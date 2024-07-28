@@ -1,0 +1,377 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.anton-font {
+  font-family: 'Anton', sans-serif;
+  /* font-weight: ; */
+}
+
+.inter-font {
+  font-family: 'Inter', sans-serif;
+  /* font-weight: ; */
+}
+
+.plus-font {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  /* font-weight: ; */
+}
+
+@keyframes loadingBar {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.animate-loading-bar {
+  animation: loadingBar 2s linear forwards;
+  transform-origin: left; /* Ensure animation starts from left */
+}
+
+.loading-bar {
+  width: 0;
+  height: 100%;
+  background-color: #1500f6; /* Change the color */
+  border-radius: 9999px; /* Make it round */
+}
+
+
+.gradient-navbar-bg {
+  background: radial-gradient(169.58% 430.16% at -3.62% -38.58%, #6083FF 0%, #0B107E 26.11%, #0B107E 84.97%, rgba(0, 240, 255, 0.65) 100%);
+  height: 80px; /* Adjust the height as needed */
+}
+
+.navbar-content {
+  color: white;
+  padding: 0 20px; /* Adjust the padding as needed */
+}
+
+
+
+.gradient-01 {
+  position: absolute;
+  left: -112px;
+  top: 1271.73px;
+  width: 276px;
+  height: 1331.27px;
+  background: linear-gradient(60%, #2954a3 100%, #0f103f 100%);
+  filter: blur(250px);
+}
+
+.gradient-02 {
+  position: absolute;
+  left: 1300px;
+  top: 1321.49px;
+  width: 299px;
+  height: 1269.06px;
+  background: linear-gradient(60deg, #2d0745);
+  filter: blur(250px);
+}
+
+
+.gradient-03 {
+  position: absolute;
+  width: 330px;
+  height: 850.06px;
+  background: #2d0745;
+  filter: blur(250px);
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-rectangle {
+  width: 50%;
+  /* Adjust as needed for different screen sizes */
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .responsive-rectangle {
+    width: 100%;
+    /* Adjust for smaller screens */
+  }
+}
+
+
+/* .wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform-origin: 16vw 0;
+  transform: scaleX(1.61803);
+} */
+
+/* Gradient */
+
+
+
+
+@media (max-width: 48rem) {
+  .wrapper::before {
+    /* background-image: radial-gradient(circle at bottom left, black, black 16vw, red 16vw, red 17vw, orange 17vw, orange 18vw, yellow 18vw, yellow 19vw, green 19vw, green 20vw, blue 20vw, blue 21vw, purple 21vw, purple 22vw, black 22vw); */
+  }
+}
+
+@media (min-width: 48rem) {
+  .wrapper::before {
+    /* background-image: radial-gradient(circle at bottom left, black, black 10vw, red 10vw, red 11vw, orange 11vw, orange 12vw, yellow 12vw, yellow 13vw, green 13vw, green 14vw, blue 14vw, blue 15vw, purple 15vw, purple 16vw, black 16vw); */
+  }
+}
+
+.content {
+  --text-size: clamp(3.05rem, 3.54vw + 2.17rem, 5rem);
+  position: relative;
+  /* The + symbol takes up less space even though it's monospace. This helps it look more balanced.
+  Btw: did you notice I love the golden ratio! */
+  /* left: 1.61803vw; */
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-bungee);
+  /* font-size: var(--text-size); */
+  font-weight: 600;
+  letter-spacing: 0.333ch;
+  background-image: linear-gradient(to right,
+      red,
+      orange,
+      yellow,
+      green,
+      blue,
+      purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  opacity: 0.4;
+}
+
+/* .content {
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+  180deg,
+  rgb(82.04, 179.56, 80.05) 0%,
+  rgb(228.44, 214.64, 90.42) 30.73%,
+  rgb(49.37, 179.74, 188.06) 48.96%,
+  rgb(53.98, 93.01, 193.37) 66.15%,
+  rgb(215.49, 148.42, 239.06) 82.81%,
+  rgb(178.5, 46.11, 46.11) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text !important;
+  color: transparent;
+  letter-spacing: 0.60ch;
+  opacity: 0.4;
+  position: relative;
+  text-align: center;
+  text-fill-color: transparent;
+  white-space: nowrap;
+  } */
+
+/* These are non-standard but well-supported so best to use with `@supports` (if you really want to use them) */
+@supports (text-stroke: 0.1em transparent) {
+  .content {
+    /* I could have used `@supports not` but isn't supported by all browsers... So we're overriding color + font-weight here for best support */
+    color: initial;
+    font-weight: 500;
+    text-stroke: 0.1em transparent;
+  }
+}
+
+@supports (-webkit-text-stroke: 0.1em transparent) {
+  .content {
+    color: initial;
+    font-weight: 500;
+    -webkit-text-stroke: 0.1em transparent;
+  }
+}
+
+/* .faq{
+  width: 60%;
+} */
+
+.vid-bg {
+  background-image: url("/videobg.svg");
+  width: 85%;
+  background-repeat: no-repeat;
+}
+
+.cuboid-container {
+  perspective: 1200px;
+  margin: 100px auto;
+  width: 200px;
+  height: 200px;
+}
+
+.cuboid {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: spin 10s linear infinite;
+}
+
+
+.front,
+.back,
+.top,
+.bottom,
+.left,
+.right {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  background: #3498db;
+  border: 1px solid #2980b9;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.top {
+  transform: rotateX(90deg);
+}
+
+.bottom {
+  transform: rotateX(-90deg);
+}
+
+.left {
+  transform: rotateY(-90deg);
+}
+
+.right {
+  transform: rotateY(90deg);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.grad1 {
+  background-image: radial-gradient(#2954a3, #0f103f, #000000);
+}
+
+.grad2 {
+  background: linear-gradient(69.7deg, rgb(216, 81, 82) 40%, rgb(154, 27, 69) 100.1%);
+
+}
+
+.variant-8 {
+  background: linear-gradient(180deg,
+      rgb(101, 169, 30) 3.65%,
+      rgb(193, 178, 40) 19.79%,
+      rgb(61, 215, 225) 33.85%,
+      rgb(105, 56, 209) 47.92%,
+      rgb(44, 89, 206) 60.94%,
+      rgb(209, 63, 203) 73.96%,
+      rgb(201, 54, 89) 87.5%,
+      rgb(74.08, 149.47, 14.23) 100%);
+}
+
+.use-slider {
+  display: flex;
+  /* align-items: center; */
+  overflow: hidden;
+  user-select: none;
+}
+
+.use-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: scroll 100s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateZ(0);
+  }
+
+  100% {
+    transform: translate3d(-73%, 0, 0);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .use-slide {
+    gap: 1.5rem;
+  }
+}
+
+.features {
+  font-family: var(--font-bungee);
+  letter-spacing: 0.60ch;
+}
+
+.navba-list {
+  position: relative;
+  margin-left: 3.5rem;
+}
+
+.navba-list::before {
+  content: "";
+  position: absolute;
+  background-color: #DB1F48;
+  height: 3px;
+  border-radius: 5px;
+  width: 0;
+  left: 0;
+  top: 25px;
+  transition: width 0.3s ease-in-out;
+}
+
+.navba-list:hover::before {
+  width: 100%;
+}
+
+.privacy {
+  /* background-image: radial-gradient(#9303C6, #420294, #000000); */
+  font-size: 400px;
+
+}
+
+.text-brand {
+  --tw-text-opacity: 1;
+  color: rgb(36 107 253/var(--tw-text-opacity));
+}
+
+.break-all {
+  word-break: break-all;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rainbow {
+  background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet);
+
+}
