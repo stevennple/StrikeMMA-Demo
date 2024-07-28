@@ -12,7 +12,7 @@ const Loading = () => {
     <div className="fixed top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-black">
     <div className="flex flex-col items-center text-white space-y-4">
       <div className="relative mb-4">
-        <Image src="/Logo.svg" alt="Logo" width={150} height={200} />
+        <Image src="/Logo2.svg" alt="Logo" width={150} height={200} />
       </div>
       <div className="w-40 h-2 bg-gray-300 rounded-full overflow-hidden relative">
         <motion.div

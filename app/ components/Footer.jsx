@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 flex flex-col lg:flex-row justify-between items-center">
         <div className="mb-4 lg:mb-0">
           <Link href="/" className="flex items-center">
-            <Image src="/Logo.svg" alt="Logo" width={120} height={30} />
+            <Image src="/Logo2.svg" alt="Logo" width={120} height={30} />
           </Link>
         </div>
         <div className="flex items-center">
