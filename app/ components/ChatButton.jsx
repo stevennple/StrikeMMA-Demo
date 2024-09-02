@@ -1,8 +1,8 @@
-'use client'
+'use client';
 import React, { useState } from 'react';
 import { ChatBubbleIcon } from '@radix-ui/react-icons';
 import { Cross2Icon } from '@radix-ui/react-icons';
-import EmbeddedIframe from './Embed';
+import Chatbot from './Chatbot';  // Import the Chatbot component
 
 const ChatButton = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,14 +24,15 @@ const ChatButton = () => {
         <ChatBubbleIcon width={30} height={30} />
       </button>
       {isOpen && (
-        <div className="fixed bottom-20 right-5 w-96 h-100 shadow-lg rounded-lg z-50 p-2">
+        <div className="fixed bottom-20 right-5 w-96 h-[600px] shadow-lg rounded-lg z-50 p-2 bg-[#1A1A1A] border border-transparent">
           <button
             onClick={closeChat}
-            className="absolute top-2 right-2 text-gray-500 hover:text-gray-800 transition duration-300"
+            className="absolute top-2 right-2 text-white hover:text-gray-300 transition duration-300 bg-transparent p-2 rounded-full hover:bg-[#0026FF]"
+            aria-label="Close Chat"
           >
             <Cross2Icon width={20} height={20} />
           </button>
-          <EmbeddedIframe />
+          <Chatbot />  {/* Render the Chatbot component directly */}
         </div>
       )}
     </>
