@@ -1,5 +1,4 @@
-# StrikeMMA.ai | Headstarter Hackathon 1
-Our project (w/ AbdullahSaeed1211) for the hackathon is the product landing page of our StrikeMMA AI Coach! <br />
+# StrikeMMA.ai
 
  - Working "Sign up Today" button that redirects to a survey <br />
  - In the survey, users will be able to submit their demographics, martial arts background, and wants in the product <br />
