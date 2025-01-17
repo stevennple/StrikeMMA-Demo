@@ -79,18 +79,6 @@ yarn dev
 - npm run start - Start production server
 - npm run lint - Run ESLint
 
-## Project Structure
-```
-StrikeMMA-Demo/
-├── components/       # React components
-├── pages/           # Next.js pages
-├── public/          # Static assets
-├── styles/          # CSS and styling files
-├── types/           # TypeScript type definitions
-├── utils/           # Utility functions
-└── package.json     # Project dependencies
-```
-
 ## Configuration
 The project uses several configuration files:
 
