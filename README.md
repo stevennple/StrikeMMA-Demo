@@ -21,7 +21,7 @@ A modern, interactive web application showcasing MMA (Mixed Martial Arts) conten
 ### Installation
 1. Clone the repository:
 ```bash
-git clone https://github.com/AbdullahSaeed1211/StrikeMMA-Demo.git
+git clone https://github.com/stevennple/StrikeMMA-Demo.git
 cd StrikeMMA-Demo
 ```
 2. Install dependencies:
